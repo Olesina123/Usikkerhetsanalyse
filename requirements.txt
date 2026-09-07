@@ -1,0 +1,20 @@
+# Gå til mappen din
+cd usikkerhetsanalyse-simulator
+
+# Lag requirements.txt (eller overskrive den)
+cat > requirements.txt << EOF
+streamlit==1.37.1
+pandas==2.2.0
+numpy==1.26.4
+
+matplotlib==3.8.3
+scipy==1.12.0
+EOF
+
+# Sjekk at den er lagret
+cat requirements.txt
+
+# Push til GitHub
+git add requirements.txt
+git commit -m "Add requirements.txt with all dependencies"
+git push origin main
